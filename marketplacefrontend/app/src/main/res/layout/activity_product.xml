@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.ProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:id="@+id/backArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:padding="5dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@drawable/outline_arrow_back_24" />
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/custom_search_bar"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="8dp"
+            android:singleLine="true"
+            android:textSize="14sp" />
+        <ImageView
+            android:id="@+id/share_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:padding="5dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@drawable/outline_share_24"/>
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:padding="5dp"
+            android:scaleX="1"
+            android:scaleY="1"
+            android:src="@drawable/outline_shopping_cart_24" />
+    </LinearLayout>
+
+    <!-- Product Images -->
+    <ImageView
+        android:id="@+id/itemImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_3"
+        android:contentDescription="lorem ipsum blabla"/>
+
+    <!-- Product Name -->
+    <TextView
+        android:id="@+id/itemPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0.00"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price shown before tasks"
+        android:textSize="12sp"/>
+
+    <!-- Product Price -->
+    <TextView
+        android:id="@+id/itemDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Product Rating -->
+    <RatingBar
+        android:id="@+id/itemRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:stepSize="0.1"
+        android:rating="3.5"
+        android:numStars="5"/>
+
+    <!-- Add more TextViews for other item details as needed -->
+
+</LinearLayout>

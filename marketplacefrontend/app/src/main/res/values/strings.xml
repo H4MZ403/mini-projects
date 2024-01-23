@@ -17,4 +17,6 @@
     <string name="register_tv">Register</string>
     <string name="title_activity_cart">CartActivity</string>
     <string name="cart_label">Cart (%d)</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank Orders</string>
 </resources>

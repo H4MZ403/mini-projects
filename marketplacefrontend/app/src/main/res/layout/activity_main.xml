@@ -52,6 +52,16 @@
                 android:backgroundTint="@color/blue"
                 app:cornerRadius = "20dp"
                 android:textColor="@color/white"/>
+            <Button
+                android:id="@+id/homepage_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="HomePage"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/custom_edit_text"
+                android:backgroundTint="@color/blue"
+                app:cornerRadius = "20dp"
+                android:textColor="@color/white"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

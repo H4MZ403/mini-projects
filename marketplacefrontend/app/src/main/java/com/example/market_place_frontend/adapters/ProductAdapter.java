@@ -61,6 +61,8 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
         return productModels.size();
     }
 
+
+
     public static class ViewHolder extends RecyclerView.ViewHolder {
         CheckBox productCheckBox;
         ImageView articleImage;
